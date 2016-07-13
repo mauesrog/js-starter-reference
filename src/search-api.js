@@ -18,8 +18,6 @@ const search = (source, term) => {
     url = GIPHY_API_URL;
   }
 
-  console.log(source, term);
-
   return new Promise((resolve, reject) => {
     axios.get(url, { params })
       .then(response => {

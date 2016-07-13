@@ -1,7 +1,6 @@
 import React from 'react';
 
 const VideoListItem = (props) => {
-  // console.log(props);
   let imgUrl, title;
 
   if (props.video.snippet) {
@@ -17,14 +16,6 @@ const VideoListItem = (props) => {
       <div>{title}</div>
     </li>
   );
-  // } else {
-  //   return (
-  //     <li onClick={() => props.onVideoSelect(props.video)}>
-  //       <img src={imgUrl} alt="video" />
-  //       <div>{props.video.snippet.title}</div>
-  //     </li>
-  //   );
-  // }
 };
 
 export default VideoListItem;
